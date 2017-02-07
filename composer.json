@@ -1,0 +1,12 @@
+{
+    "name" : "naoki1061/HTMLParser",
+    "license" : "MIT",
+    "require" : {
+        "php" : ">= 7.0.0"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "HTMLParser" : "src/"
+        }
+    }
+}
