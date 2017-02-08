@@ -16,11 +16,11 @@ class HTMLParser {
     private $html;
 
     public function __construct($url) {
-        $this->url = $url ?? "";
+        $this->url = $url ? $url : "";
     }
 
     public function getHTML($url = null) {
-        $this->url  = $url ?? $this->url;
+        $this->url  = $url ? $url : $this->url;
         $this->html = file_get_contents($this->url);
         return $this->html;
     }
